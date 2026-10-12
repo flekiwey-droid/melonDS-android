@@ -32,6 +32,7 @@ import me.magnum.melonds.parcelables.RomParcelable
 import me.magnum.melonds.ui.common.melonTextButtonColors
 import me.magnum.melonds.ui.common.rom.EmulatorLaunchValidatorDelegate
 import me.magnum.melonds.ui.dsiwaremanager.DSiWareManagerActivity
+import me.magnum.melonds.ui.localmultiplayer.LocalMultiplayerActivity
 import me.magnum.melonds.ui.emulator.EmulatorActivity
 import me.magnum.melonds.ui.romdetails.RomDetailsActivity
 import me.magnum.melonds.ui.romlist.ui.DownloadProgressDialog
@@ -134,6 +135,10 @@ class RomListActivity : AppCompatActivity() {
                     },
                     onNavigateToDsiWareManager = {
                         val intent = Intent(this@RomListActivity, DSiWareManagerActivity::class.java)
+                        startActivity(intent)
+                    },
+                    onNavigateToLocalMultiplayer = {
+                        val intent = Intent(this@RomListActivity, LocalMultiplayerActivity::class.java)
                         startActivity(intent)
                     },
                     retrieveRomIcon = { rom ->

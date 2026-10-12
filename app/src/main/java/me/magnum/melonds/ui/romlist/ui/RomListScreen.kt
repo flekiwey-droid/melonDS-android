@@ -79,6 +79,7 @@ fun RomListScreen(
     onDirectorySelected: (Uri) -> Unit,
     onNavigateToSettings: () -> Unit,
     onNavigateToDsiWareManager: () -> Unit,
+    onNavigateToLocalMultiplayer: () -> Unit,
     retrieveRomIcon: suspend (Rom) -> RomIcon,
 ) {
     var isSearchActive by rememberSaveable { mutableStateOf(false) }
@@ -126,6 +127,7 @@ fun RomListScreen(
                         onSortChange = onSortChange,
                         onFirmwareBoot = onFirmwareBoot,
                         onNavigateToDsiWareManager = onNavigateToDsiWareManager,
+                        onNavigateToLocalMultiplayer = onNavigateToLocalMultiplayer,
                         onRefresh = onRefresh,
                         onNavigateToSettings = onNavigateToSettings,
                     )
@@ -168,6 +170,7 @@ private fun RomListTopBar(
     onSortChange: (SortingMode) -> Unit,
     onFirmwareBoot: (ConsoleType) -> Unit,
     onNavigateToDsiWareManager: () -> Unit,
+    onNavigateToLocalMultiplayer: () -> Unit,
     onRefresh: () -> Unit,
     onNavigateToSettings: () -> Unit,
 ) {
@@ -313,6 +316,12 @@ private fun RomListTopBar(
                                 onNavigateToDsiWareManager()
                             }) {
                                 Text(stringResource(R.string.dsiware_manager))
+                            }
+                            DropdownMenuItem(onClick = {
+                                onOverflowMenuChange(false)
+                                onNavigateToLocalMultiplayer()
+                            }) {
+                                Text(stringResource(R.string.local_multiplayer))
                             }
                             DropdownMenuItem(onClick = {
                                 onOverflowMenuChange(false)

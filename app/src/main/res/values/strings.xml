@@ -64,6 +64,26 @@
     <string name="update_download_failed">Failed to download update</string>
 
     <string name="dsiware_manager">DSiWare Manager</string>
+    <string name="local_multiplayer">Local multiplayer</string>
+    <string name="local_multiplayer_permission_required">Local multiplayer needs permission to find nearby devices over Wi-Fi.</string>
+    <string name="local_multiplayer_grant_permission">Grant permission</string>
+    <string name="local_multiplayer_transport">Connection</string>
+    <string name="local_multiplayer_transport_wifi_direct">Wi-Fi Direct (no router needed)</string>
+    <string name="local_multiplayer_transport_shared_wifi">Same Wi-Fi network</string>
+    <string name="local_multiplayer_wifi_direct_unsupported">This device does not support Wi-Fi Direct</string>
+    <string name="local_multiplayer_wifi_disabled">Wi-Fi is disabled. Enable it to use Wi-Fi Direct</string>
+    <string name="local_multiplayer_local_address">Local address: %1$s</string>
+    <string name="local_multiplayer_host">Host</string>
+    <string name="local_multiplayer_search">Search</string>
+    <string name="local_multiplayer_searching">Searching…</string>
+    <string name="local_multiplayer_host_address">Host IP address</string>
+    <string name="local_multiplayer_join">Join</string>
+    <string name="local_multiplayer_available_games">Available devices</string>
+    <string name="local_multiplayer_role_host">You are hosting</string>
+    <string name="local_multiplayer_role_client">You joined a session</string>
+    <string name="local_multiplayer_instructions">Go back and start the same game on every device, then use the game\'s local wireless (DS Wireless Play / Download Play) menus.</string>
+    <string name="local_multiplayer_players">Players (%1$d/%2$d)</string>
+    <string name="local_multiplayer_leave">Leave session</string>
     <string name="no_dsiware_titles_installed">You don\'t have any DSiWare title installed</string>
     <string name="dsiware_manager_no_dsi_setup">You haven\'t setup the DSi system</string>
     <string name="dsiware_manager_invalid_dsi_setup">Your DSi system setup is invalid</string>
