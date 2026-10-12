@@ -465,4 +465,14 @@
         <item>Ajustar a la parte inferior</item>
         <item>Ajustar a la derecha</item>
     </string-array>
+    <string name="local_multiplayer">Multijugador local</string>
+    <string name="local_multiplayer_permission_required">El multijugador local necesita permiso para buscar dispositivos cercanos por Wi-Fi.</string>
+    <string name="local_multiplayer_grant_permission">Conceder permiso</string>
+    <string name="local_multiplayer_transport">Conexión</string>
+    <string name="local_multiplayer_transport_wifi_direct">Wi-Fi Direct (sin router)</string>
+    <string name="local_multiplayer_transport_shared_wifi">Misma red Wi-Fi</string>
+    <string name="local_multiplayer_host">Crear partida</string>
+    <string name="local_multiplayer_search">Buscar</string>
+    <string name="local_multiplayer_join">Unirse</string>
+    <string name="local_multiplayer_leave">Salir de la sesión</string>
 </resources>
